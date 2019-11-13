@@ -82,7 +82,7 @@ export default {
         this.item = response.data;
       })
       .catch(error => {
-        console.log(error.response);
+       alert(error.response);
       });
   },
 
@@ -94,7 +94,7 @@ export default {
           this.item
         )
         .then(response => {
-          console.log(response);
+          alert(response.data.id);
           alert("edited");
         })
         .catch(error => {

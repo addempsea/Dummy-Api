@@ -49,7 +49,7 @@ export default {
           this.tableData = response.data;
         })
         .catch(error => {
-          console.log(error.response);
+          alert(error.response);
         });
     }
   }

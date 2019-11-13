@@ -24,7 +24,7 @@ export default {
         )
         .then(response => {
           alert("Data Deleted Successfully");
-          console.log(response);
+          alert(response.data.id);
           this.$emit("reload");
         });
     },
