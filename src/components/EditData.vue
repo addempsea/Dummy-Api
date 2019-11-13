@@ -76,7 +76,7 @@ export default {
   mounted() {
     this.$http
       .get(
-        `http://dummy.restapiexample.com/api/v1/employee/${this.$route.params.id}`
+        `https://dummy.restapiexample.com/api/v1/employee/${this.$route.params.id}`
       )
       .then(response => {
         this.item = response.data;
@@ -90,7 +90,7 @@ export default {
     editData() {
       this.$http
         .put(
-          `http://dummy.restapiexample.com/api/v1/update/${this.$route.params.id}`,
+          `https://dummy.restapiexample.com/api/v1/update/${this.$route.params.id}`,
           this.item
         )
         .then(response => {

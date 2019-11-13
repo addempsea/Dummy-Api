@@ -20,7 +20,7 @@ export default {
     deleteData() {
       this.$http
         .delete(
-          `http://dummy.restapiexample.com/api/v1/delete/${this.tableDetails.id}`
+          `https://dummy.restapiexample.com/api/v1/delete/${this.tableDetails.id}`
         )
         .then(response => {
           alert("Data Deleted Successfully");

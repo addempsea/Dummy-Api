@@ -44,7 +44,7 @@ export default {
   methods: {
     fetchData() {
       this.$http
-        .get("http://dummy.restapiexample.com/api/v1/employees")
+        .get("https://dummy.restapiexample.com/api/v1/employees")
         .then(response => {
           this.tableData = response.data;
         })

@@ -33,7 +33,7 @@ export default {
   methods: {
     submitData() {
       this.$http
-        .post("http://dummy.restapiexample.com/api/v1/create", this.newData)
+        .post("https://dummy.restapiexample.com/api/v1/create", this.newData)
         .then(response => {
           alert(response.data)
           this.newData = {
